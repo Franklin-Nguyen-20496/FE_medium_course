@@ -1,0 +1,21 @@
+{
+  "name": "medium__course",
+  "version": "1.0.0",
+  "description": "css to pass the exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "Hoang",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.3"
+  }
+}
