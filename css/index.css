@@ -4313,7 +4313,7 @@ button {
   text-decoration: none;
   cursor: pointer;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 0.375rem 0.75rem;
   border-radius: 0;
   background-color: #f9a381;
   transition: all 0.3s ease-out;
@@ -4343,6 +4343,11 @@ button {
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  .btn-normal-pink {
+    padding: 0.75rem 1.5rem;
+  }
+}
 .btn-normal-pink-lg {
   position: relative;
   display: inline-block;
@@ -4380,6 +4385,11 @@ button {
   box-sizing: border-box;
 }
 
+@media (min-width: 992px) {
+  .btn-normal-pink-lg {
+    padding: 1.5rem 2.7rem;
+  }
+}
 .btn-normal-aqua {
   position: relative;
   display: inline-block;
@@ -4387,7 +4397,7 @@ button {
   text-decoration: none;
   cursor: pointer;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 0.375rem 0.75rem;
   border-radius: 0;
   background-color: #95deca;
   transition: all 0.3s ease-out;
@@ -4417,6 +4427,11 @@ button {
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  .btn-normal-aqua {
+    padding: 0.75rem 1.5rem;
+  }
+}
 .btn-normal-aqua-lg {
   position: relative;
   display: inline-block;
@@ -4454,6 +4469,11 @@ button {
   box-sizing: border-box;
 }
 
+@media (min-width: 992px) {
+  .btn-normal-aqua-lg {
+    padding: 1.5rem 2.7rem;
+  }
+}
 @keyframes hotTag {
   0% {
     transform: scale(1);
@@ -4841,13 +4861,17 @@ button {
   #app {
     padding: 1.5rem;
   }
+
+  #header {
+    height: calc(100vh - 2.25rem);
+  }
 }
 #header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh - 2.25rem);
+  height: 100vh;
 }
 #header .header {
   display: flex;
@@ -4909,10 +4933,10 @@ button {
   -webkit-transform: scaleX(0);
 }
 #header .header .header__content {
-  width: 95%;
+  width: 95% !important;
 }
 #header .header .header__content .header__content--btn {
-  display: inline-block;
+  display: inline-block !important;
 }
 #header .header .header__content .header__content--description {
   font-size: 1.26rem;
@@ -4987,7 +5011,12 @@ button {
   color: #555555;
 }
 #benefit .benefit__container .benefit__card .item__card--btn {
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  #benefit .benefit__container .benefit__card .item__card--btn {
+    font-size: 1.4rem;
+  }
 }
 #benefit .benefit__container .benefit__img {
   width: 100%;
@@ -5082,6 +5111,8 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   -webkit-box-align: center;
   align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
 }
 #master.master .master__container .master__container--item {
   display: flex;
@@ -5089,13 +5120,17 @@ button {
   justify-content: center;
   align-items: center;
 }
-#master.master .master__container .master__container--item:hover .master__item--img img {
+#master.master .master__container .master__container--item .master__item--name {
+  font-size: 1.82rem;
+}
+#master.master .master__container .master__container--item .master__item--img:hover img {
   filter: blur(0.065rem) brightness(50%);
   transition: all 0.3s ease-out;
 }
-#master.master .master__container .master__container--item:hover .master__item--img .master__img--sup {
+#master.master .master__container .master__container--item .master__item--img:hover .master__img--sup {
   opacity: 1;
   transform: scale(1);
+  transform: translate(-50%, -50%);
   transition: all 0.3s ease-out;
 }
 #master.master .master__container .master__container--item .master__item--img {
@@ -5111,21 +5146,31 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -44px;
-  margin-left: -44px;
   width: 88px;
   height: 88px;
+  transform: translate(-50%, -50%) !important;
   border: 1px solid #7ad6bc;
   cursor: pointer;
   opacity: 0;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
+@media (min-width: 1200px) {
+  #master.master .master__container .master__container--item .master__item--img {
+    width: 200px;
+    height: 200px;
+  }
+}
 #master.master .master__container img {
-  width: 160px;
+  width: 100%;
   height: auto;
   filter: blur(0) brightness(100%);
   transition: all 0.3s ease-out;
+}
+@media (min-width: 992px) {
+  #master.master .master__container {
+    max-width: 80%;
+  }
 }
 
 #background-img {
