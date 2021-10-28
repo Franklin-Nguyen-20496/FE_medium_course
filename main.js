@@ -24,4 +24,8 @@ $('document').ready(() => {
     $('.header__responsive').click(() => {
         $('.header__menu').toggleClass('d-none');
     })
+
+    $('.notify__btn').click(() => {
+        $('.notify').addClass('d-none');
+    })
 })
