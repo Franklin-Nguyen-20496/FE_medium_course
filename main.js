@@ -20,8 +20,8 @@ function changeImg(){
 
 $('document').ready(() => {
     changeImg();
-    // console.log($('.header__menu'));
     $('.header__responsive').click(() => {
+        
         $('.header__menu').toggleClass('d-none');
     })
 
