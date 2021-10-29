@@ -5093,13 +5093,16 @@ button {
   }
 }
 #header .header .header__content {
-  width: 95% !important;
+  width: 100% !important;
 }
 #header .header .header__content .header__content--btn {
   display: inline-block !important;
 }
 #header .header .header__content .header__content--description {
   font-size: 1.26rem;
+}
+#header .header .header__content p.header__content--title {
+  white-space: nowrap !important;
 }
 @media (min-width: 768px) {
   #header .header .header__right .header__responsive {
@@ -5112,7 +5115,7 @@ button {
 }
 @media (min-width: 1400px) {
   #header .header {
-    width: 100%;
+    width: 100% !important;
   }
   #header .header .header__left {
     width: 110px;
@@ -5124,7 +5127,8 @@ button {
     margin-top: 2.55rem;
   }
   #header .header__content p.header__content--title {
-    font-size: 6.4rem !important;
+    font-size: 6rem !important;
+    white-space: nowrap !important;
   }
   #header .header__content .header__content--btn {
     padding-top: 2.25rem !important;
